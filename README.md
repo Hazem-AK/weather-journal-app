@@ -9,7 +9,6 @@
 - [index.html](#index.html)
 - [app.js](#app.js)
 - [styles.css](#styles.css)
-- [Running](#Running)
 - [Authors](#authors)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -18,24 +17,22 @@
 
 
 ## Description
-This is a dynamic landing page project for the fwd-Udacity-Professional course
+This is a dynamic WeatherJournal project for the fwd-Udacity-Professional course
 
 ## Prerequisite
 * A text editor or an IDE (like IntelliJ)
 * A Browser (chrome, firefox, etc..)
+* The 'cors' package should be installed into the project from the command line
+* the project file server.js, and the instance of the app should be setup to use cors().
+* API Credentials
+* Create API credentials on OpenWeatherMap.com or use existing API key included
 
 ## index.html
 This file is the skeleton of the landing page. It's written in HTML and contains the content to be displayed. Filler text is used as a placeholder. This was built upon to create an interactive site.
 
-## app.js
-We start by globally selecting important elements of the page and move on to implementing the logic for the header to disappear while not scrolling, after that we add eventListeners to make the Header visible on mouseOver (Line 6-33). From line 35 on we dynamically built the navigation by creating a new fragment and looping over all sections, adding list-elements and all necessary things to the created anchor-tag. In line 45 a "scrollToSection" function is added to each anchor-tag. In line 64 the callback-function for the IntersectionObserver starts, followed by the Observer itself, its options and the assignment of all sections to observe (line 96-99).
-Finally we add some logic to implement a "back-to-top" button that only appears after we left the top of the screen.
 
 ## styles.css
 This is where all the visual code is kept. It is responible for all the visual aspects of the page.
-
-## Running
-To launch this website, simply clone the repo and open the index.html file in the browser.
 
 ## Authors
 
@@ -44,16 +41,16 @@ To launch this website, simply clone the repo and open the index.html file in th
 
 ## License
 
-`fwd-Adv-Landing-Page` is open source software [licensed as MIT][license].
+`weather-journal-app` is open source software [licensed as MIT][license].
 
 ## Acknowledgments
 
-* Udacity landing page code-starter files https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page
+* Udacity landing page code-starter files https://github.com/udacity/fend/tree/refresh-2019/projects/weather-journal-app
 * ReadMe Template by madhur-taneja https://madhur-taneja.github.io/README-Template
 * Udacity fwd community
 
 [//]: # (HyperLinks)
 
 [GitHub]: https://github.com/Hazem-AK/
-[GitHub Repository]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page
-[license]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page/blob/master/LICENSE.md
+[GitHub Repository]: https://github.com/Hazem-AK/weather-journal-app
+[license]: https://github.com/Hazem-AK/weather-journal-app/blob/master/LICENSE.md
